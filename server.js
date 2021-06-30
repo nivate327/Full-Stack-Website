@@ -17,12 +17,12 @@ const cookieParser = require('cookie-parser')
 app.use(express.json());
 app.use(cookieParser());
 
-app.get("/", (req,res,next)=>
+app.get("/MyFirstWebsite/", (req,res,next)=>
 {
     res.render("home");
 })
 
-app.get("/logout", auth, async(req, res)=>
+app.get("/MyFirstWebsite/logout", auth, async(req, res)=>
 {
     try {
 
@@ -48,7 +48,7 @@ app.get("/logout", auth, async(req, res)=>
 });
 
 
-app.get("/project", auth , (req,res,next)=>
+app.get("/MyFirstWebsite/project", auth , (req,res,next)=>
 {
     res.render("project");
     console.log(` Awesome MERN ${req.cookies.jwt}`);
@@ -56,7 +56,7 @@ app.get("/project", auth , (req,res,next)=>
 
 
 
-app.get("/ragister", (req,res,next)=>
+app.get("/MyFirstWebsite/ragister", (req,res,next)=>
 {
     res.render("ragister");
 })
