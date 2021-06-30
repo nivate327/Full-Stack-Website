@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Slabo 27px', serif;
+}
+
+.loginContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+
+/* ragister form */
+.ragisterContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.ragister-form
+{
+   /* border: 1px solid red; */
+    
+   box-shadow: 0 0 11px rgba(236, 9, 9, 0.4);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.ragister-form .input
+{
+    width: 18rem;
+    margin: 0.6rem 0;
+    outline: none;
+    border-radius: 5px;
+    border:none;
+    border:1px solid rgb(173, 173, 173);
+    padding: 0.2rem 0.5rem;
+}
+
+.input:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+
+.ragister-form .label
+{
+    margin: 0.5rem 0;
+}
+
+.footer
+{
+    margin-top: 1rem;
+}
+.sign-forget
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-forget .rbtn
+{
+    border:none;
+    padding: 7px 30px;
+    color:#fff;
+    background:red;
+    outline: none;
+    border-radius: 5px;
+    outline: none;
+    transition: backgroud 0.5s ease-in-out;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    
+}
+
+.rbtn:hover{
+    background: rgb(230, 79, 79);
+    outline: none;
+}
+
+.fpass
+{
+    text-decoration: none;
+    margin-top: 0.7rem;
+}
+
+
+.ragister-form p{
+    margin-bottom: 0;
+}
+
+.ragister-form
+{
+    box-shadow: 0 0 11px rgb(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#gen
+{
+    margin-bottom: 1rem;
+}
+
+#m
+{
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.gender
+{
+    margin-right: 3rem;
+    margin-left: 0.3rem;
+}
+
+#age
+{
+    margin-bottom: 1rem;
+}
+
+
+.login-form
+{
+   /* border: 1px solid red; */
+    
+   box-shadow: 0 0 11px rgb(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.login-form .input
+{
+    width: 16rem;
+    margin: 1rem 0;
+    outline: none;
+    border-radius: 5px;
+    border:none;
+    border:1px solid rgb(173, 173, 173);
+    padding: 0.2rem 0.5rem;
+}
+
+.input:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+
+.login-form .label
+{
+    margin: 0.5rem 0;
+}
+
+.sign-forget
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-forget .loginbtn
+{
+    border:none;
+    padding: 7px 30px;
+    color:#fff;
+    background:red;
+    outline: none;
+    border-radius: 5px;
+    outline: none;
+    transition: backgroud 0.5s ease-in-out;
+    margin-top: 0.5rem;
+}
+
+.loginbtn:hover{
+    background: rgb(245, 76, 76);
+    outline: none;
+}
+
+.fpass
+{
+    text-decoration: none;
+    margin-top: 0.7rem;
+}
+

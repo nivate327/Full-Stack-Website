@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/891dd0f0bd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <%- include("../partials/Navbar") -%>
+
+        <!-- home section -->
+        <section class="homesection">
+            <h1>Serving You </h1>
+            <h2>Since 1989</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Saepe alias est officia quia provident
+                soluta
+                eius<br> sint ea quibusdam dicta.</p>
+            <button class="shop"> Shop March </button>
+
+        </section>
+
+        <!-- service section -->
+        <section id="service">
+            <p class="fstpara"> Ways to Support </p>
+            <h3 class="fsthead">Support Acme Outdoors</h3>
+            <div class="cards">
+                <div class="card">
+                    <p class="no"> 01 </p>
+                    <h3 class="title">Shop Products</h3>
+                    <div class="box">
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <p class="no"> 02 </p>
+                    <h3 class="title">Donate Food</h3>
+                    <div class="box">
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <p class="no"> 03 </p>
+                    <h3 class="title">Buy Gift Cards</h3>
+                    <div class="box">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- client section -->
+        <section class="client">
+            <div class="client-box">
+                <h3 class="head1">How we're Keeping you</h3>
+                <h3 class="head2">safe during COVID-19</h3>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur hhsdhfgh.</p>
+                <p class="para2">Lorem ipsum, dolor sit amet hsgdfhg hhjd.</p>
+                <p class="para3">Lorem ipsum, dolor sit hjhtrwe hjg.</p>
+                <button class="clientbtn">Read Our Statements</button>
+            </div>
+        </section>
+
+        <section class="contactus">
+            <p class="parac"> Contact Us </p>
+            <div class="contact">
+                <form action="/contact" method="POST" class="formcontact">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                    <br>
+                    <label for="phno">Phone No</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter Your phno">
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter Your email">
+                    <br>
+                    <label for="msg" class="lmsg">Message</label>
+                    <br>
+                    <textarea name="message" id="msg" cols="30" rows="6" placeholder="Enter Message"></textarea>
+                    <br>
+                    <button type="submit" class="btnsub"> Submit </button>
+                </form>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="socmedia">
+                <p><i class="far fa-user"></i>PortFolio</p>
+
+                <div class="icon">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+
+            <div class="author">
+                <p class="auth"><i class="fas fa-laptop-code"></i>  Made by Rohan</p>
+            </div>
+        </footer>
+        <script>
+            var open = document.querySelector('.menu');
+            var close = document.querySelector('.closebtn');
+
+            open.addEventListener("click", () => {
+                document.getElementById("mysidenav").style.width = "11.5rem";
+            });
+
+            close.addEventListener("click", () => {
+                document.getElementById("mysidenav").style.width = "0";
+            });
+
+        </script>
+</body>
+
+</html>

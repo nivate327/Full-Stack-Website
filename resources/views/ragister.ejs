@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragister</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/891dd0f0bd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <%- include("../partials/Navbar") -%>
+
+    <div class="ragisterContainer">
+        <form action="/ragister" method="POST" class="ragister-form">
+            <label for="username" class="label">Name</label>
+            <br>
+            <input type="text" class="name input" id="name" name="name">
+            <br>
+
+            <label for="emailid" class="label">Email ID</label>
+            <br>
+            <input type="text" class="emailid input" id="emailid" name="email">
+            <br>
+
+            <label for="password" class="label">Phone</label>
+            <br>
+            <input type="number" class="age input" id="age" name="phone">
+            <br>
+
+            <label for="password"  class="label"id="gen">Gender</label>
+            <br>
+            <label class="gendercat" id="fe">Male</label>
+            <input type="radio" name="gender" class="gender" id="m" value="Male">
+                <label class="gendercat" >Female</label>
+            <input type="radio" name="gender" class="gender" value="Female">
+            <br>
+
+            <label for="password" class="label">PassWord</label>
+            <br>
+            <input type="password" class="password input" id="password" name="password">
+            <br>
+
+            <label for="password" class="label">Confirm PassWord</label>
+            <br>
+            <input type="password" class="password input" id="password" name="confirmpassword">
+            <br>
+
+            <div class="signup-forget">
+                <button class="rbtn" type="submit"> SignUp </button>
+                <a href="/login" class="fpass">I have Already Account ?</a>
+            </div>
+        </form>
+        </div>
+        <footer class="footer">
+            <div class="socmedia">
+                <p><i class="far fa-user"></i>PortFolio</p>
+
+                <div class="icon">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+
+            <div class="author">
+                <p class="auth"><i class="fas fa-laptop-code"></i>  Made by Rohan</p>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/891dd0f0bd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <%- include("../partials/Navbar") -%>
+
+      <!--Login Section-->
+    <div class="loginContainer">
+        <form action="/login" method="POST" class="login-form">
+            <label for="username">UserName</label>
+            <br>
+            <input type="text" class="username input" id="username" name="email" type="email">
+            <br>
+            <label for="password">PassWord</label>
+            <br>
+            <input type="password" class="password input" id="password" name="password" type="password">
+            <br>
+            <div class="sign-forget">
+                <button class="loginbtn"  type="submit"> SignIn </button>
+                <a href="/ragister" class="fpass">Don't Have Account ?</a>
+            </div>
+        </form>
+    </div>
+
+    <!--Footer Section-->
+    <footer class="footer">
+        <div class="socmedia">
+            <p><i class="far fa-user"></i>PortFolio</p>
+
+            <div class="icon">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-google"></i>
+            </div>
+        </div>
+
+        <div class="author">
+            <p class="auth"><i class="fas fa-laptop-code"></i>  Made by Rohan</p>
+        </div>
+    </footer>
+
+</body>
+</html>
