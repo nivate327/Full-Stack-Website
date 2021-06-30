@@ -17,7 +17,7 @@ const cookieParser = require('cookie-parser')
 app.use(express.json());
 app.use(cookieParser());
 
-app.get("/", (req,res,next)=>
+app.get("/MyFirstWebsite/", (req,res,next)=>
 {
     res.render("home");
 })
